@@ -1,6 +1,9 @@
 
 # README
 
+
+Things you may want to cover:
+=======
 ### Proceso
 ```
 Crear modelos  
@@ -186,6 +189,7 @@ Errores y validaciones
     "event_ids":integer[]
 }
 ```
+
 
  </td>
 </tr>
