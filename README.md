@@ -48,22 +48,27 @@ Errores y validaciones
 
 ## API Endpoints
 
-| Endpoint                   | HTTP Method | Descripción                      |
-| ---------------------------| ----------- | --------------------------------|
-| `/events`                  | GET         | Lista de todos los eventos.      |
-| `/events/:id`              | GET         | Detalle de un evento específico por ID. |
-| `/events`                  | POST        | Crea un nuevo evento.            |
-| `/products`                | GET         | Lista de todos los productos.    |
-| `/products/:id`            | GET         | Detalle de un porducto específico por ID. |
-| `/products`                | POST        | Crea un nuevo producto.          |
-| `/carts`                   | GET         | Lista de todos los carritos.       |
-| `/carts/:id`               | GET         | Detalle de un carrito específico por ID. |
-| `/carts`                   | POST        | Crea un nuevo carrito.             |
-| `/carts/:id/products`      | POST        | Agregua un producto a un carrito por ID. |
-| `/carts/:id/products`      | DELETE      | Elimina un producto a un carrito por ID. |
-| `/carts/:id/events`        | POST        | Agregua un evento a un carrito por ID.  |
-| `/carts/:id/events`        | DELETE      | Elimina un evento a un carrito por ID. |
-| `/tickets`                 | GET         | Lista de todos los tickets.     |
-| `/tickets/:id`             | GET         | Detalle de un ticket específico por ID. |
-| `/tickets`                 | POST        | Crea un nuevo ticket.           |
+| Endpoint                   | HTTP Method | Descripción                              | Body                    |
+| ---------------------------| ----------- | -----------------------------------------|-------------------------|
+| `/events`                  | GET         | Lista de todos los eventos.              |				|
+| `/events/:id`              | GET         | Detalle de un evento específico por ID.  |				|
+| `/events`                  | POST        | Crea un nuevo evento.                    |	```json {
+    "name":"product 4",
+    "price":50,
+    "thumbnail":"none",
+    "description":"event"
+} ```	|
+| `/products`                | GET         | Lista de todos los productos.            |				|
+| `/products/:id`            | GET         | Detalle de un porducto específico por ID.|				|
+| `/products`                | POST        | Crea un nuevo producto.                  |				|
+| `/carts`                   | GET         | Lista de todos los carritos.             |				|
+| `/carts/:id`               | GET         | Detalle de un carrito específico por ID. |				|
+| `/carts`                   | POST        | Crea un nuevo carrito.                   |				|
+| `/carts/:id/products`      | POST        | Agregua un producto a un carrito por ID. |				|
+| `/carts/:id/products`      | DELETE      | Elimina un producto a un carrito por ID. |				|
+| `/carts/:id/events`        | POST        | Agregua un evento a un carrito por ID.   |				|
+| `/carts/:id/events`        | DELETE      | Elimina un evento a un carrito por ID.   |				|
+| `/tickets`                 | GET         | Lista de todos los tickets.              |				|
+| `/tickets/:id`             | GET         | Detalle de un ticket específico por ID.  |				|
+| `/tickets`                 | POST        | Crea un nuevo ticket.                    |				|
 
