@@ -218,7 +218,7 @@ Errores y validaciones
 </tbody>
 </table>
 
-### Puntos flojos
+### Problemas
 
 ```
 * install rails
