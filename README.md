@@ -242,16 +242,23 @@ Errores y validaciones
     rails no cargaba bien las variables del archivo .env
     stack overflow me ayudo a quitar este simple if.
 
+```
+
+
+
     ```ruby
+    # /config/aplication.rb 
 
     if ['development', 'test'].include? ENV['RAILS_ENV']
       Dotenv::Railtie.load
     end
 
+    # to
+    Dotenv::Railtie.load
+
     ```
 
 
-```
 
 
 
