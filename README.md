@@ -239,10 +239,6 @@ Errores y validaciones
     rails no cargaba bien las variables del archivo .env
     stack overflow me ayudo a quitar este simple if.
 
-```
-
-
-
 ```ruby
 # /config/aplication.rb 
 
@@ -254,6 +250,12 @@ end
 Dotenv::Railtie.load
 
 ```
+
+
+```
+
+
+
 
 
 
