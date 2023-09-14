@@ -52,12 +52,7 @@ Errores y validaciones
 | ---------------------------| ----------- | -----------------------------------------|-------------------------|
 | `/events`                  | GET         | Lista de todos los eventos.              |				|
 | `/events/:id`              | GET         | Detalle de un evento específico por ID.  |				|
-| `/events`                  | POST        | Crea un nuevo evento.                    |	```json {
-    "name":"product 4",
-    "price":50,
-    "thumbnail":"none",
-    "description":"event"
-} ```	|
+| `/events`                  | POST        | Crea un nuevo evento.                    |	```json {"name":"product4","price":50,"thumbnail":"none", "description":"event"} ```	|
 | `/products`                | GET         | Lista de todos los productos.            |				|
 | `/products/:id`            | GET         | Detalle de un porducto específico por ID.|				|
 | `/products`                | POST        | Crea un nuevo producto.                  |				|
