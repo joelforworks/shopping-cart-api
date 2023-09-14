@@ -1,9 +1,6 @@
 
 # README
 
-
-Things you may want to cover:
-=======
 ### Proceso
 ```
 Crear modelos  
@@ -210,7 +207,7 @@ Errores y validaciones
 <td>POST</td>
 <td>Create a new ticket.</td>
 <td>
-      
+
 ```css
 {
     "cart_id":integer
@@ -238,8 +235,29 @@ Errores y validaciones
 * Manejo de errores
     rails genera errores por default y no he descubierto todavía como
  	generar mis errores con mis messages personalizados	·
+* Variables de entorno
+    rails no cargaba bien las variables del archivo .env
+    stack overflow me ayudo a quitar este simple if.
+
+```ruby
+# /config/aplication.rb 
+
+if ['development', 'test'].include? ENV['RAILS_ENV']
+  Dotenv::Railtie.load
+end
+
+# to
+Dotenv::Railtie.load
 
 ```
+
+
+```
+
+
+
+
+
 
 
 
