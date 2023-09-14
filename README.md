@@ -1,9 +1,6 @@
 
 # README
 
-
-Things you may want to cover:
-=======
 ### Proceso
 ```
 Crear modelos  
