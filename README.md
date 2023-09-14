@@ -2,20 +2,23 @@
 # README
 
 ##**Proceso**
-
-> crear modelos  
-> crear controllers
-> crear rutas
-> crear postman para documentar y facilitar las pruebas los endpoints
-> describir cada endpoint
-> Pequeño tutorial de como utilizar el programa
+```
+crear modelos  
+crear controllers
+crear rutas
+crear postman para documentar y facilitar las pruebas los endpoints
+describir cada endpoint
+Pequeño tutorial de como utilizar el programa
+```
 
 ##**Puntos flojos**
 
-> Rendimiento en endpoints como add product …
-> Falta de seguridad
-> Mal planteamiento de modelos
-> Mal manejo de errores
+```
+Rendimiento en endpoints como add product …
+Falta de seguridad
+Mal planteamiento de modelos
+Mal manejo de errores
+```
 
 ##**Mejora de sistema**
 
