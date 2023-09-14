@@ -15,12 +15,11 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= ENV["DB_USER"] %>
   password: <%= ENV["DB_PASSWORD"] %>
-  socket: /tmp/mysql.sock
+  host: <%= ENV['DB_HOST'] %>
 
 development:
   <<: *default
-  database: shopping_cart_development
-
+  database: <%= ENV["DB_DATABASE"] %>
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
