@@ -46,130 +46,179 @@ Errores y validaciones
 		* Validar si existe x modelo
 ```	
 
-<!-- API Endpoints Table -->
+## API Endpoints
+
 <table>
-  <thead>
-    <tr>
-      <th>Endpoint</th>
-      <th>HTTP Method</th>
-      <th>Description</th>
-      <th>Body</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>/events</td>
-      <td>GET</td>
-      <td>Obtain a list of all events.</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>/events/:id</td>
-      <td>GET</td>
-      <td>Retrieve details of a specific event by ID.</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>/events</td>
-      <td>POST</td>
-      <td>Create a new event.</td>
-      <td>
+<thead>
+<tr>
+<th>Endpoint</th>
+<th>HTTP Method</th>
+<th>Description</th>
+<th>Body</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/events</td>
+<td>GET</td>
+<td>Obtain a list of all events.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>/events/:id</td>
+<td>GET</td>
+<td>Retrieve details of a specific event by ID.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>/events</td>
+<td>POST</td>
+<td>Create a new event.</td>
+<td>
+    
+```css
+{
+    "name":string,
+    "price":integer,
+    "thumbnail":string,
+    "description":string
+}
+```
+
+</td>
+</tr>
+<tr>
+<td>/products</td>
+<td>GET</td>
+<td>Fetch a list of all products.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>/products/:id</td>
+<td>GET</td>
+<td>Retrieve details of a specific product by ID.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>/products</td>
+<td>POST</td>
+<td>Create a new product.</td>
+<td>
+	          
+```css
+{
+    "name":string,
+    "price":integer,
+    "thumbnail":string,
+    "description":string
+}
+```
+
+</td>
+</tr>
+<tr>
+<td>/carts</td>
+<td>GET</td>
+<td>Get a list of all carts.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>/carts/:id</td>
+<td>GET</td>
+<td>Retrieve details of a specific cart by ID.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>/carts</td>
+<td>POST</td>
+<td>Create a new cart.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>/carts/:id/products</td>
+<td>POST</td>
+<td>Add a product to a cart by ID.</td>
+<td>    
+      
+```css
+{
+    "products_ids":integer[]
+}
+```
+</td>
+</tr>
+<tr>
+<td>/carts/:id/products</td>
+<td>DELETE</td>
+<td>Remove a product from a cart by ID.</td>
+<td>
 	      
-	      ```json
-	json
-	{
-	    "id": 10,
-	    "username": "alanpartridge",
-	    "email": "alan@alan.com",
-	    "password_hash": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.CPCWCZsyqqa8./whhfzBZydX7yvahHS",
-	    "password_salt": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.",
-	    "created_at": "2015-02-14T20:45:26.433Z",
-	    "updated_at": "2015-02-14T20:45:26.540Z"
-	}
-	```
- 
-      </td>
-    </tr>
-    <tr>
-      <td>/products</td>
-      <td>GET</td>
-      <td>Fetch a list of all products.</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>/products/:id</td>
-      <td>GET</td>
-      <td>Retrieve details of a specific product by ID.</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>/products</td>
-      <td>POST</td>
-      <td>Create a new product.</td>
-      <td>JSON</td>
-    </tr>
-    <tr>
-      <td>/carts</td>
-      <td>GET</td>
-      <td>Get a list of all carts.</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>/carts/:id</td>
-      <td>GET</td>
-      <td>Retrieve details of a specific cart by ID.</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>/carts</td>
-      <td>POST</td>
-      <td>Create a new cart.</td>
-      <td>JSON</td>
-    </tr>
-    <tr>
-      <td>/carts/:id/products</td>
-      <td>POST</td>
-      <td>Add a product to a cart by ID.</td>
-      <td>JSON</td>
-    </tr>
-    <tr>
-      <td>/carts/:id/products</td>
-      <td>DELETE</td>
-      <td>Remove a product from a cart by ID.</td>
-      <td>JSON</td>
-    </tr>
-    <tr>
-      <td>/carts/:id/events</td>
-      <td>POST</td>
-      <td>Add an event to a cart by ID.</td>
-      <td>JSON</td>
-    </tr>
-    <tr>
-      <td>/carts/:id/events</td>
-      <td>DELETE</td>
-      <td>Remove an event from a cart by ID.</td>
-      <td>JSON</td>
-    </tr>
-    <tr>
-      <td>/tickets</td>
-      <td>GET</td>
-      <td>Retrieve a list of all tickets.</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>/tickets/:id</td>
-      <td>GET</td>
-      <td>Fetch details of a specific ticket by ID.</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
-      <td>/tickets</td>
-      <td>POST</td>
-      <td>Create a new ticket.</td>
-      <td>JSON</td>
-    </tr>
-  </tbody>
+```css
+{
+    "products_ids":integer[]
+}
+```
+
+</td>
+</tr>
+<tr>
+<td>/carts/:id/events</td>
+<td>POST</td>
+<td>Add an event to a cart by ID.</td>
+<td>
+      
+```css
+{
+    "event_ids":integer[]
+}
+```
+
+</td>
+</tr>
+<tr>
+<td>/carts/:id/events</td>
+<td>DELETE</td>
+<td>Remove an event from a cart by ID.</td>
+<td>
+	      
+```css
+{
+    "event_ids":integer[]
+}
+```
+
+ </td>
+</tr>
+<tr>
+<td>/tickets</td>
+<td>GET</td>
+<td>Retrieve a list of all tickets.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>/tickets/:id</td>
+<td>GET</td>
+<td>Fetch details of a specific ticket by ID.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>/tickets</td>
+<td>POST</td>
+<td>Create a new ticket.</td>
+<td>
+      
+```css
+{
+    "cart_id":integer
+}
+```
+
+</td>
+</tr>
+</tbody>
 </table>
-<!-- End of API Endpoints Table -->
+
+
+
 
 
