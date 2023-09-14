@@ -1,18 +1,22 @@
 class ProductsController < ApplicationController
   def index 
-    @events = Product.all
+    @products = Product.all
     render json: @events
   end
 
   def find
-    @event = Product.find(params[:id])
-    render json: @event
+    @product = Product.where(:id => params[:id])
+    if @product[0]
+      render json: @product[0]
+    else
+      render json: 'Product not found.'
+    end
   end
 
   def create
-    @event = Product.new(product_params)
-    if @event.save 
-      render json: @event 
+    @product = Product.new(product_params)
+    if @product.save 
+      render json: @product 
     else
       render json: {error:"Can't create events"} 
     end
