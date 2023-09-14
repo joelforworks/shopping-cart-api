@@ -24,7 +24,7 @@ Mal manejo de errores
 
 ```
 Mal planteamiento de modelos
-* Concurrencia de dato en Productos y Eventos
+> Concurrencia de dato en Productos y Eventos
 * Poniendo un campo stock me ahorraría esta concurrencia de datos.
   Inheritance
 * Hacer que Productos y Eventos hereden de un modelo padre los campos que se repiten (precio, nombre, thumbnail y descripción). Mejor      escalado y mejor manejo del de tipo de producto (producto o evento en este caso)
