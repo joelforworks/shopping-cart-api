@@ -3,11 +3,11 @@
 
 ### Proceso
 ```
-crear modelos  
-crear controllers
-crear rutas
-crear postman para documentar y facilitar las pruebas los endpoints
-describir cada endpoint
+Crear modelos  
+Crear controllers
+Crear rutas
+Crear postman para documentar y facilitar las pruebas los endpoints
+Describir cada endpoint
 Pequeño tutorial de como utilizar el programa
 ```
 
@@ -218,6 +218,24 @@ Errores y validaciones
 </tbody>
 </table>
 
+### Puntos flojos
+
+```
+* install rails
+	Instalar ruby on rails xd
+* Ruby version  2.6 to > 2.7
+    Mi ordenador tenía una versión de ruby antigua; visitando 3423423 foros  
+    pude cambiar de versión y proseguir.
+* Problems with M1 :)
+    Movida con el procesador de mi ordenador teniendo que volver a visitar 4534579 foros.
+* Aprender ruby y rails
+	Aprender este bonito lengua parecido a si amigo python
+	y leer que me aporta las clases más importantes de rails
+* Manejo de errores
+    rails genera errores por default y no he descubierto todavía como
+ 	generar mis errores con mis messages personalizados	·
+
+```
 
 
 
