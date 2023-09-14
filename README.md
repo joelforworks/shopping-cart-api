@@ -8,6 +8,7 @@ Crear controllers
 Crear rutas
 Crear postman para documentar y facilitar las pruebas los endpoints
 Describir cada endpoint
+Dockerizar el projecto 😳
 Pequeño tutorial de como utilizar el programa
 ```
 
