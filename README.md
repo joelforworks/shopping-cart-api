@@ -26,6 +26,7 @@ Mal manejo de errores
 Mal planteamiento de modelos
     * Concurrencia de dato en Productos y Eventos
     * Poniendo un campo stock me ahorraría esta concurrencia de datos.
+
 Inheritance
     * Hacer que Productos y Eventos hereden de un modelo padre los campos
       que se repiten (precio, nombre, thumbnail y descripción).
@@ -37,31 +38,32 @@ Falta de seguridad
 
 Mejora de rendimiento
     * En algunos endpoints como add/remove product/event recorro un array, pudiendo dar problemas de rendimiento
+
 Errores y validaciones 
     * Me he  centrado en lo esencial del ejercicio que es un carrito de compra,
       por ende me falta muchas validaciones y errores, aqui dejo ejemplos:
-		* `Validar si esta fuera de stock`
-		* `Validar si existe x modelo`
+		* Validar si esta fuera de stock
+		* Validar si existe x modelo
 ```	
 
+## API Endpoints
 
+| Endpoint                   | HTTP Method | Descripción                      |
+| ---------------------------| ----------- | --------------------------------|
+| `/events`                  | GET         | Lista de todos los eventos.      |
+| `/events/:id`              | GET         | Detalle de un evento específico por ID. |
+| `/events`                  | POST        | Crea un nuevo evento.            |
+| `/products`                | GET         | Lista de todos los productos.    |
+| `/products/:id`            | GET         | Detalle de un porducto específico por ID. |
+| `/products`                | POST        | Crea un nuevo producto.          |
+| `/carts`                   | GET         | Lista de todos los carritos.       |
+| `/carts/:id`               | GET         | Detalle de un carrito específico por ID. |
+| `/carts`                   | POST        | Crea un nuevo carrito.             |
+| `/carts/:id/products`      | POST        | Agregua un producto a un carrito por ID. |
+| `/carts/:id/products`      | DELETE      | Elimina un producto a un carrito por ID. |
+| `/carts/:id/events`        | POST        | Agregua un evento a un carrito por ID.  |
+| `/carts/:id/events`        | DELETE      | Elimina un evento a un carrito por ID. |
+| `/tickets`                 | GET         | Lista de todos los tickets.     |
+| `/tickets/:id`             | GET         | Detalle de un ticket específico por ID. |
+| `/tickets`                 | POST        | Crea un nuevo ticket.           |
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
