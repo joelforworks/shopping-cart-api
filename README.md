@@ -210,7 +210,7 @@ Errores y validaciones
 <td>POST</td>
 <td>Create a new ticket.</td>
 <td>
-      
+
 ```css
 {
     "cart_id":integer
