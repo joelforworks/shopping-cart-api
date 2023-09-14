@@ -1,7 +1,18 @@
 class TicketsController < ApplicationController
   def index
-    render json: "hola"
+    @tickets = Ticket.all()
+    render json: @tickets
   end
+  def find 
+    @ticket = Ticket.where(:id => params[:id])
+    if @ticket[0]
+      render json: @ticket[0]
+    else
+      render json: 'Ticket not found.'
+    end
+
+  end
+
   def create 
     # find cart 
     @cart = Cart::find(ticket_params[:cart_id])

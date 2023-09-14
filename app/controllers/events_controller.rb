@@ -5,8 +5,12 @@ class EventsController < ApplicationController
   end
 
   def find
-    @event = Event.find(params[:id])
-    render json: @event
+    @event = Event.where(:id => params[:id])
+    if @event[0]
+      render json: @event[0]
+    else
+      render json: 'Event not found.'
+    end
   end
 
   def create

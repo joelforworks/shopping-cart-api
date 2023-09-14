@@ -7,11 +7,12 @@ class CartsController < ApplicationController
   end
 
   def find 
-    @cart = Cart.find(params[:id])
-    if !@cart
-      render json: {error:"Can't add  products"} 
+    @cart = Cart.where(:id => params[:id])
+    if @cart[0]
+      render json: @cart[0]
+    else
+      render json: 'Cart not found.'
     end
-    render json: @cart
   end
 
   # Add products to cart
