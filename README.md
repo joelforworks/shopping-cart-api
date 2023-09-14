@@ -1,7 +1,7 @@
 
 # README
 
-##**Proceso**
+### Proceso
 ```
 crear modelos  
 crear controllers
@@ -11,7 +11,7 @@ describir cada endpoint
 Pequeño tutorial de como utilizar el programa
 ```
 
-##**Puntos flojos**
+### Puntos flojos
 
 ```
 Rendimiento en endpoints como add product …
@@ -20,7 +20,7 @@ Mal planteamiento de modelos
 Mal manejo de errores
 ```
 
-##**Mejora de sistema**
+### Mejora de sistema
 
 ###Mal planteamiento de modelos
 Concurrencia de dato en Productos y Eventos
