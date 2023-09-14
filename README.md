@@ -46,6 +46,50 @@ Errores y validaciones
 		* Validar si existe x modelo
 ```	
 
+### Problemas
+
+```
+* install rails
+	Instalar ruby on rails xd
+* Ruby version  2.6 to > 2.7
+    Mi ordenador tenía una versión de ruby antigua; visitando 3423423 foros
+    pude cambiar de versión y proseguir.
+* Problems with M1 :)
+    Movida con el procesador de mi ordenador teniendo que volver a visitar 4534579 foros.
+* Aprender ruby y rails
+	Aprender este bonito lengua parecido a si amigo python
+	y leer que me aporta las clases más importantes de rails
+* Manejo de errores
+    rails genera errores por default y no he descubierto todavía como
+ 	generar mis errores con mis messages personalizados	·
+* Variables de entorno
+    rails no cargaba bien las variables del archivo .env
+    stack overflow me ayudo a quitar este simple if.
+
+```
+
+
+```ruby
+# /config/aplication.rb
+
+if ['development', 'test'].include? ENV['RAILS_ENV']
+  Dotenv::Railtie.load
+end
+
+# to
+Dotenv::Railtie.load
+
+```
+
+```
+* Error al hacer migrate en docker
+    Configure docker-compose y Dockerfile.
+    Fui a la terminal del contendor y puse este comando: rake db:migrate.
+	Hizo la migracion y todo funcionaba 🙂
+
+```
+
+
 ## API Endpoints
 
 <table>
@@ -218,42 +262,6 @@ Errores y validaciones
 </tr>
 </tbody>
 </table>
-
-### Problemas
-
-```
-* install rails
-	Instalar ruby on rails xd
-* Ruby version  2.6 to > 2.7
-    Mi ordenador tenía una versión de ruby antigua; visitando 3423423 foros  
-    pude cambiar de versión y proseguir.
-* Problems with M1 :)
-    Movida con el procesador de mi ordenador teniendo que volver a visitar 4534579 foros.
-* Aprender ruby y rails
-	Aprender este bonito lengua parecido a si amigo python
-	y leer que me aporta las clases más importantes de rails
-* Manejo de errores
-    rails genera errores por default y no he descubierto todavía como
- 	generar mis errores con mis messages personalizados	·
-* Variables de entorno
-    rails no cargaba bien las variables del archivo .env
-    stack overflow me ayudo a quitar este simple if.
-
-```ruby
-# /config/aplication.rb 
-
-if ['development', 'test'].include? ENV['RAILS_ENV']
-  Dotenv::Railtie.load
-end
-
-# to
-Dotenv::Railtie.load
-
-```
-
-
-```
-
 
 
 
