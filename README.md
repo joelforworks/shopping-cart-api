@@ -246,17 +246,17 @@ Errores y validaciones
 
 
 
-    ```ruby
-    # /config/aplication.rb 
+```ruby
+# /config/aplication.rb 
 
-    if ['development', 'test'].include? ENV['RAILS_ENV']
-      Dotenv::Railtie.load
-    end
+if ['development', 'test'].include? ENV['RAILS_ENV']
+  Dotenv::Railtie.load
+end
 
-    # to
-    Dotenv::Railtie.load
+# to
+Dotenv::Railtie.load
 
-    ```
+```
 
 
 
