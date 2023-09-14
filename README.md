@@ -46,24 +46,130 @@ Errores y validaciones
 		* Validar si existe x modelo
 ```	
 
-## API Endpoints
+<!-- API Endpoints Table -->
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>HTTP Method</th>
+      <th>Description</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/events</td>
+      <td>GET</td>
+      <td>Obtain a list of all events.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>/events/:id</td>
+      <td>GET</td>
+      <td>Retrieve details of a specific event by ID.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>/events</td>
+      <td>POST</td>
+      <td>Create a new event.</td>
+      <td>
+	      
+	      ```json
+	json
+	{
+	    "id": 10,
+	    "username": "alanpartridge",
+	    "email": "alan@alan.com",
+	    "password_hash": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.CPCWCZsyqqa8./whhfzBZydX7yvahHS",
+	    "password_salt": "$2a$10$uhUIUmVWVnrBWx9rrDWhS.",
+	    "created_at": "2015-02-14T20:45:26.433Z",
+	    "updated_at": "2015-02-14T20:45:26.540Z"
+	}
+	```
+ 
+      </td>
+    </tr>
+    <tr>
+      <td>/products</td>
+      <td>GET</td>
+      <td>Fetch a list of all products.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>/products/:id</td>
+      <td>GET</td>
+      <td>Retrieve details of a specific product by ID.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>/products</td>
+      <td>POST</td>
+      <td>Create a new product.</td>
+      <td>JSON</td>
+    </tr>
+    <tr>
+      <td>/carts</td>
+      <td>GET</td>
+      <td>Get a list of all carts.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>/carts/:id</td>
+      <td>GET</td>
+      <td>Retrieve details of a specific cart by ID.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>/carts</td>
+      <td>POST</td>
+      <td>Create a new cart.</td>
+      <td>JSON</td>
+    </tr>
+    <tr>
+      <td>/carts/:id/products</td>
+      <td>POST</td>
+      <td>Add a product to a cart by ID.</td>
+      <td>JSON</td>
+    </tr>
+    <tr>
+      <td>/carts/:id/products</td>
+      <td>DELETE</td>
+      <td>Remove a product from a cart by ID.</td>
+      <td>JSON</td>
+    </tr>
+    <tr>
+      <td>/carts/:id/events</td>
+      <td>POST</td>
+      <td>Add an event to a cart by ID.</td>
+      <td>JSON</td>
+    </tr>
+    <tr>
+      <td>/carts/:id/events</td>
+      <td>DELETE</td>
+      <td>Remove an event from a cart by ID.</td>
+      <td>JSON</td>
+    </tr>
+    <tr>
+      <td>/tickets</td>
+      <td>GET</td>
+      <td>Retrieve a list of all tickets.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>/tickets/:id</td>
+      <td>GET</td>
+      <td>Fetch details of a specific ticket by ID.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>/tickets</td>
+      <td>POST</td>
+      <td>Create a new ticket.</td>
+      <td>JSON</td>
+    </tr>
+  </tbody>
+</table>
+<!-- End of API Endpoints Table -->
 
-| Endpoint                   | HTTP Method | Descripción                              | Body                    |
-| ---------------------------| ----------- | -----------------------------------------|-------------------------|
-| `/events`                  | GET         | Lista de todos los eventos.              |				|
-| `/events/:id`              | GET         | Detalle de un evento específico por ID.  |				|
-| `/events`                  | POST        | Crea un nuevo evento.                    |	```json {"name":"product4","price":50,"thumbnail":"none", "description":"event"} ```	|
-| `/products`                | GET         | Lista de todos los productos.            |				|
-| `/products/:id`            | GET         | Detalle de un porducto específico por ID.|				|
-| `/products`                | POST        | Crea un nuevo producto.                  |				|
-| `/carts`                   | GET         | Lista de todos los carritos.             |				|
-| `/carts/:id`               | GET         | Detalle de un carrito específico por ID. |				|
-| `/carts`                   | POST        | Crea un nuevo carrito.                   |				|
-| `/carts/:id/products`      | POST        | Agregua un producto a un carrito por ID. |				|
-| `/carts/:id/products`      | DELETE      | Elimina un producto a un carrito por ID. |				|
-| `/carts/:id/events`        | POST        | Agregua un evento a un carrito por ID.   |				|
-| `/carts/:id/events`        | DELETE      | Elimina un evento a un carrito por ID.   |				|
-| `/tickets`                 | GET         | Lista de todos los tickets.              |				|
-| `/tickets/:id`             | GET         | Detalle de un ticket específico por ID.  |				|
-| `/tickets`                 | POST        | Crea un nuevo ticket.                    |				|
 
