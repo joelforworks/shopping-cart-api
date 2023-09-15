@@ -21,7 +21,7 @@ Mal planteamiento de modelos
 Mal manejo de errores
 ```
 
-### Mejora de sistema
+### Mejora del sistema
 
 ```
 Mal planteamiento de modelos
@@ -263,6 +263,9 @@ Dotenv::Railtie.load
 </tr>
 </tbody>
 </table>
+
+
+# DESPLIEGUE / COMO HACER QUE ESTO FUNCIONE
 
 
 
