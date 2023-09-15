@@ -310,7 +310,7 @@ rake db:migrate
 
 ## Tutorial
 
-Adjunto postman en le projecto
+Adjunto postman en le projecto /shopping-cart.postman_collection.json
 
 ### Crear productos y eventos
 
