@@ -1,0 +1,398 @@
+{
+	"info": {
+		"_postman_id": "b96c8822-38ad-4498-a19e-1b50c9fd6d7e",
+		"name": "SHOPPING CART",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26143448"
+	},
+	"item": [
+		{
+			"name": "Events",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"event\",\n    \"price\":50,\n    \"thumbnail\":\"none\",\n    \"description\":\"event\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/events",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"product 4\",\n    \"price\":50,\n    \"thumbnail\":\"none\",\n    \"description\":\"event\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carts",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/carts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/carts/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"carts",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/carts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"product_ids\":[2,3,4,5]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/carts/1/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"carts",
+								"1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"product_ids\":[5]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/carts/1/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"carts",
+								"1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"event_ids\":[]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/carts/1/events",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"carts",
+								"1",
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove event",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"event_ids\":[]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/carts/1/events",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"carts",
+								"1",
+								"events"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tickets",
+			"item": [
+				{
+					"name": "Index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/tickets",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/tickets/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tickets",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart_id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/tickets",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
