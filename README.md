@@ -280,7 +280,7 @@ export DB_ROOT_PASSWORD=password
 ```docker
 #root dir
 
-
+docker-compose up --build
 
 ```
 
