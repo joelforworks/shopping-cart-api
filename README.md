@@ -249,7 +249,40 @@ Errores y validaciones
 </table>
 
 
-# DESPLIEGUE / COMO HACER QUE ESTO FUNCIONE
+## DESPLIEGUE / COMO HACER QUE ESTO FUNCIONE
+
+###1 Crear un archivo .env 
+
+```zsh
+#root dir
+
+cp env.example .env
+
+```
+
+###2 Añadir variables de entorno 
+
+```zsh
+
+# Elige el nombre de usuario de la base de datos
+export DB_USER=user
+# La contraseña de la base de datos que tiene que poner la aplicacion 
+export DB_PASSWORD=password
+# Elige el nombre de la base de datos
+export DB_DATABASE=database
+# Elige la contraseña para la base de datos
+export DB_ROOT_PASSWORD=password
+
+```
+
+###3 Build
+
+```zsh
+#root dir
+
+docker-compose up --build
+
+```
 
 
 
