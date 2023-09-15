@@ -8,17 +8,18 @@
 3. [Mejora del Sistema](#mejora-del-sistema)
 4. [Problemas](#problemas)
 5. [API Endpoints](#api-endpoints)
-6. [Despliegue / Cómo Hacer Que Esto Funcione](#despliegue--cómo-hacer-que-esto-funcione)
+6. [Despliegue](#despliegue)
 7. [Tutorial](#tutorial)
 
 
 # Proceso
+
 ```
 Crear modelos  
 Crear controllers
 Crear rutas
 Crear postman para documentar y facilitar las pruebas los endpoints
-Dockerizar el projecto 😳
+Dockerizar el projecto 😳 
 Describir cada endpoint
 Pequeño tutorial de como utilizar el programa
 ```
@@ -62,8 +63,8 @@ Errores y validaciones
 ### Problemas
 
 ```
-* install rails
-	Instalar ruby on rails xd
+* Install rails
+    Instalar ruby on rails xd
 * Ruby version  2.6 to > 2.7
     Mi ordenador tenía una versión de ruby antigua; visitando 3423423 foros
     pude cambiar de versión y proseguir.
@@ -260,7 +261,8 @@ Errores y validaciones
 </table>
 
 
-## DESPLIEGUE / COMO HACER QUE ESTO FUNCIONE
+## DESPLIEGUE
+
 
 ### 1 Crear un archivo .env 
 
@@ -305,11 +307,40 @@ rake db:migrate
 ```
 <img width="616" alt="image" src="https://github.com/joelforworks/shopping-cart-api/assets/101220133/dfe2303e-dbab-4008-9686-1f350c180d1f">
 
+
 ## Tutorial
 
+Adjunto postman en le projecto
+
+### Crear productos y eventos
+
+<img width="442" alt="image" src="https://github.com/joelforworks/shopping-cart-api/assets/101220133/b8264d44-b7eb-40e8-8048-96ddea1768c1">
+
+```
+Repetir el proceso con sus respectivos [endpoints](#api-endpoints)
+```
+
+### Crear un carrito 
+
+```
+Cuando se crea un carrito no tiene productos y eventos por default
+```
+
+<img width="418" alt="image" src="https://github.com/joelforworks/shopping-cart-api/assets/101220133/b3aa746a-f261-465c-9c30-f5779cd589cf">
+
+## Añadir producto y eventos al carrito
+
+```
+Ver [aquí](#api-endpoints) como funciona los endpoint de añadir productos/eventos
+```
+
+<img width="402" alt="image" src="https://github.com/joelforworks/shopping-cart-api/assets/101220133/1558e5ac-1d10-488e-9d56-554852f9eb76">
+
+## Crear un ticket
+
+<img width="462" alt="image" src="https://github.com/joelforworks/shopping-cart-api/assets/101220133/129d709c-be5c-4bf4-bf9a-80615a8fef71">
 
 
-
-
+## Y esto sería todo muchas gracias. :)
 
 
