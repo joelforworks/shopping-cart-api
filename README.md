@@ -300,7 +300,7 @@ docker-compose up --build
 ### 4 Arrancar la base de batos
 
 ```zsh
-# Ir a la terminal de la aplicacion en el contenador de docker
+# Ir a la terminal de la aplicación en el contenedor de docker
 
 rake db:migrate
 
