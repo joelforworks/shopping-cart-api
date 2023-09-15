@@ -1,7 +1,18 @@
 
 # README
 
-### Proceso
+## Índice
+
+1. [Proceso](#proceso)
+2. [Puntos Flojos](#puntos-flojos)
+3. [Mejora del Sistema](#mejora-del-sistema)
+4. [Problemas](#problemas)
+5. [API Endpoints](#api-endpoints)
+6. [Despliegue / Cómo Hacer Que Esto Funcione](#despliegue--cómo-hacer-que-esto-funcione)
+7. [Tutorial](#tutorial)
+
+
+# Proceso
 ```
 Crear modelos  
 Crear controllers
@@ -284,6 +295,17 @@ docker-compose up --build
 
 ```
 
+### 4 Arrancar la base de batos
+
+```zsh
+# Ir a la terminal de la aplicacion en el contenador de docker
+
+rake db:migrate
+
+```
+<img width="616" alt="image" src="https://github.com/joelforworks/shopping-cart-api/assets/101220133/dfe2303e-dbab-4008-9686-1f350c180d1f">
+
+## Tutorial
 
 
 
