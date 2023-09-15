@@ -83,6 +83,10 @@ Errores y validaciones
     Configure docker-compose y Dockerfile.
     Fui a la terminal del contendor y puse este comando: rake db:migrate.
 	Hizo la migracion y todo funcionaba 🙂
+* Tests
+    Aun no estoy familiarizado con los unit tests o cualquier otro patrón de tests
+    Estoy formándome en este campo gracias!
+
 
 ```
 
