@@ -316,9 +316,7 @@ Adjunto postman en le projecto
 
 <img width="442" alt="image" src="https://github.com/joelforworks/shopping-cart-api/assets/101220133/b8264d44-b7eb-40e8-8048-96ddea1768c1">
 
-```
 Repetir el proceso con sus respectivos [endpoints](#api-endpoints)
-```
 
 ### Crear un carrito 
 
@@ -330,13 +328,16 @@ Cuando se crea un carrito no tiene productos y eventos por default
 
 ## Añadir producto y eventos al carrito
 
-```
 Ver [aquí](#api-endpoints) como funciona los endpoint de añadir productos/eventos
-```
 
 <img width="402" alt="image" src="https://github.com/joelforworks/shopping-cart-api/assets/101220133/1558e5ac-1d10-488e-9d56-554852f9eb76">
 
 ## Crear un ticket
+
+```
+Por ultimo crear nuestro tiquet
+```
+
 
 <img width="462" alt="image" src="https://github.com/joelforworks/shopping-cart-api/assets/101220133/129d709c-be5c-4bf4-bf9a-80615a8fef71">
 
