@@ -38,7 +38,8 @@ Falta de seguridad
       Una capa de usuarios y tokens para más seguridad (standard jwt por ejemplo)  
 
 Mejora de rendimiento
-    * En algunos endpoints como add/remove product/event recorro un array, pudiendo dar problemas de rendimiento
+    * En algunos endpoints como add/remove product/event recorro un array, 
+      pudiendo dar problemas de rendimiento
 
 Errores y validaciones 
     * Me he  centrado en lo esencial del ejercicio que es un carrito de compra,
@@ -66,23 +67,6 @@ Errores y validaciones
 * Variables de entorno
     rails no cargaba bien las variables del archivo .env
     stack overflow me ayudo a quitar este simple if.
-
-```
-
-
-```ruby
-# /config/aplication.rb
-
-if ['development', 'test'].include? ENV['RAILS_ENV']
-  Dotenv::Railtie.load
-end
-
-# to
-Dotenv::Railtie.load
-
-```
-
-```
 * Error al hacer migrate en docker
     Configure docker-compose y Dockerfile.
     Fui a la terminal del contendor y puse este comando: rake db:migrate.
@@ -120,7 +104,7 @@ Dotenv::Railtie.load
 <td>POST</td>
 <td>Create a new event.</td>
 <td>
-    
+
 ```css
 {
     "name":string,
@@ -149,7 +133,7 @@ Dotenv::Railtie.load
 <td>POST</td>
 <td>Create a new product.</td>
 <td>
-	          
+
 ```css
 {
     "name":string,
@@ -183,13 +167,14 @@ Dotenv::Railtie.load
 <td>/carts/:id/products</td>
 <td>POST</td>
 <td>Add a product to a cart by ID.</td>
-<td>    
-      
+<td>
+
 ```css
 {
     "products_ids":integer[]
 }
 ```
+
 </td>
 </tr>
 <tr>
@@ -197,7 +182,7 @@ Dotenv::Railtie.load
 <td>DELETE</td>
 <td>Remove a product from a cart by ID.</td>
 <td>
-	      
+
 ```css
 {
     "products_ids":integer[]
@@ -211,7 +196,7 @@ Dotenv::Railtie.load
 <td>POST</td>
 <td>Add an event to a cart by ID.</td>
 <td>
-      
+
 ```css
 {
     "event_ids":integer[]
@@ -225,13 +210,12 @@ Dotenv::Railtie.load
 <td>DELETE</td>
 <td>Remove an event from a cart by ID.</td>
 <td>
-	      
+
 ```css
 {
     "event_ids":integer[]
 }
 ```
-
 
  </td>
 </tr>
