@@ -277,7 +277,7 @@ export DB_ROOT_PASSWORD=password
 
 ### 3 Build
 
-```docker
+```zsh
 #root dir
 
 docker-compose up --build
