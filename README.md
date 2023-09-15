@@ -251,16 +251,16 @@ Errores y validaciones
 
 ## DESPLIEGUE / COMO HACER QUE ESTO FUNCIONE
 
-###1 Crear un archivo .env 
+### 1 Crear un archivo .env 
 
-```zsh
+```bash
 #root dir
 
 cp env.example .env
 
 ```
 
-###2 Añadir variables de entorno 
+### 2 Añadir variables de entorno 
 
 ```zsh
 
@@ -275,12 +275,12 @@ export DB_ROOT_PASSWORD=password
 
 ```
 
-###3 Build
+### 3 Build
 
-```zsh
+```docker
 #root dir
 
-docker-compose up --build
+
 
 ```
 
