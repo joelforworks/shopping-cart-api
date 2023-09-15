@@ -276,7 +276,7 @@ cp env.example .env
 ### 2 Añadir variables de entorno 
 
 ```zsh
-
+#/.env
 # Elige el nombre de usuario de la base de datos
 export DB_USER=user
 # La contraseña de la base de datos que tiene que poner la aplicacion 
