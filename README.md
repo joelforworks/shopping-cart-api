@@ -19,7 +19,7 @@ Crear modelos
 Crear controllers
 Crear rutas
 Crear postman para documentar y facilitar las pruebas los endpoints
-Dockerizar el projecto 😳 
+Dockerizar el proyecto 😳 
 Describir cada endpoint
 Pequeño tutorial de como utilizar el programa
 ```
@@ -55,8 +55,8 @@ Mejora de rendimiento
 
 Errores y validaciones 
     * Me he  centrado en lo esencial del ejercicio que es un carrito de compra,
-      por ende me falta muchas validaciones y errores, aqui dejo ejemplos:
-		* Validar si esta fuera de stock
+      por ende me falta muchas validaciones y errores, aquí dejo ejemplos:
+		* Validar si está fuera de stock
 		* Validar si existe x modelo
 ```	
 
@@ -71,8 +71,8 @@ Errores y validaciones
 * Problems with M1 :)
     Movida con el procesador de mi ordenador teniendo que volver a visitar 4534579 foros.
 * Aprender ruby y rails
-	Aprender este bonito lengua parecido a si amigo python
-	y leer que me aporta las clases más importantes de rails
+	Aprender este bonito lenguaje parecido a si amigo python
+	y documentarme de las clases más importantes de rails
 * Manejo de errores
     rails genera errores por default y no he descubierto todavía como
  	generar mis errores con mis messages personalizados	·
@@ -82,7 +82,7 @@ Errores y validaciones
 * Error al hacer migrate en docker
     Configure docker-compose y Dockerfile.
     Fui a la terminal del contendor y puse este comando: rake db:migrate.
-	Hizo la migracion y todo funcionaba 🙂
+	Hizo la migración y todo funcionaba 🙂
 
 ```
 
@@ -279,7 +279,7 @@ cp env.example .env
 #/.env
 # Elige el nombre de usuario de la base de datos
 export DB_USER=user
-# La contraseña de la base de datos que tiene que poner la aplicacion 
+# La contraseña de la base de datos que tiene que poner la aplicación 
 export DB_PASSWORD=password
 # Elige el nombre de la base de datos
 export DB_DATABASE=database
@@ -310,7 +310,7 @@ rake db:migrate
 
 ## Tutorial
 
-Adjunto postman en le projecto
+Adjunto postman en le proyecto /shopping-cart.postman_collection.json
 
 ### Crear productos y eventos
 
@@ -335,7 +335,7 @@ Ver [aquí](#api-endpoints) como funciona los endpoint de añadir productos/even
 ## Crear un ticket
 
 ```
-Por ultimo crear nuestro tiquet
+Por último crear nuestro tiquet
 ```
 
 
